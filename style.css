@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ภาษาไทย */
+  border: none;
+  outline: none;
+}
+
+body {
+  background: #9873fe;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 25em;
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 2em;
+  border-radius: 0.8em;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+.appdetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.appdata {
+  row-gap: 2.5rem; /* ลดระยะห่างเล็กน้อย */
+}
+
+.appicon {
+  width: 9.37em;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.apptitle {
+  font-size: 1.8em; /* เพิ่มขนาด */
+  text-transform: uppercase;
+  color: #4a4a8d; /* เพิ่ม Contrast */
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+input#amount {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+  border-bottom: 2px solid #02002c;
+  color: #7a789d;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+
+input#amount:focus {
+  color: #9873fe;
+  border-color: #9873fe;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+select {
+  width: 100%;
+  padding: 0.8em; /* เพิ่ม Padding */
+  font-size: 1.1em; /* เพิ่มขนาด */
+  border-radius: 0.3em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('assets/bxs-down-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 20px 20px;
+  background-color: #9873fe;
+  color: #ffffff;
+}
+
+section option {
+  background-color: #ffffff;
+  color: #02002c;
+}
+
+button {
+  font-size: 1.1em; /* เพิ่มขนาด */
+  width: 100%;
+  background-color: #9873fe;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-radius: 0.3em;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6f55cc;
+}
+
+#result {
+  font-size: 1.3em; /* เพิ่มขนาด */
+  text-align: center;
+  margin-top: 1em;
+  color: #02002c;
+  background-color: #e5dbff;
+  padding: 1em;
+  border-radius: 0.3em;
+}
