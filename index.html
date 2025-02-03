@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/Logo.jpg" type="image/x-icon">
+    <title>Cureency Converter</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="appdetails">
+            <img src="assets/Logo.jpg" class="appicon">
+            <h1 class="Apptitle">Cureency Converter</h1>
+        </div>
+        <div class="appdata">
+            <label for"amount">Amount:</label>
+            <input type="number" id="amount" value="100">
+            <div class="dropdown">
+                <select id="form-currency-select"></select>
+                <select id="to-currency-select"></select>
+            </div>
+            <button id="convert">Convert</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="currency-codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
